@@ -1,4 +1,3 @@
-/* ===== Cores ===== */
 :root {
     --preto: #000000;
     --vermelho: #e10600;
@@ -10,7 +9,6 @@
     --altura-header: 72px;
 }
 
-/* ===== Base ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +29,6 @@ body {
     line-height: 1.7;
 }
 
-/* ===== Cabeçalho ===== */
 header {
     position: sticky;
     top: 0;
@@ -70,7 +67,6 @@ nav a {
     border-radius: 999px;
 }
 
-/* ===== Seções ===== */
 .conteudo {
     width: 100%;
     max-width: 1500px;
@@ -99,7 +95,6 @@ nav a {
     background-color: #232323;
 }
 
-/* ===== Início ===== */
 .comeco {
     min-height: calc(100vh - var(--altura-header));
     display: flex;
@@ -180,7 +175,6 @@ nav a {
     box-shadow: 0 0 60px rgba(225, 6, 0, 0.25);
 }
 
-/* ===== Layout das seções ===== */
 .secao-grid {
     display: grid;
     grid-template-columns: 1fr 2.2fr;
@@ -204,7 +198,6 @@ nav a {
     color: var(--cinza-suave);
 }
 
-/* ===== Cards ===== */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -263,7 +256,6 @@ nav a {
     font-style: italic;
 }
 
-/* ===== Rodapé ===== */
 footer {
     padding: 32px 20px;
     text-align: center;
@@ -273,7 +265,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ===== Tablet e celular ===== */
 @media (max-width: 900px) {
     .comeco-grid,
     .secao-grid {
@@ -316,7 +307,6 @@ footer {
     }
 }
 
-/* ===== Pessoas importantes ===== */
 .pessoas-conteudo {
     display: flex;
     flex-direction: column;
@@ -385,7 +375,6 @@ footer {
     }
 }
 
-/* ===== Imagens grandes nas seções ===== */
 .secao-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -442,7 +431,6 @@ footer {
     background: linear-gradient(135deg, #1a1a1a, #2b0504);
 }
 
-/* ===== Pessoas ===== */
 .secao-pessoas .secao-titulo {
     position: static;
     margin-bottom: 30px;
