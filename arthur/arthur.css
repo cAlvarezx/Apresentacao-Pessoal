@@ -1,26 +1,22 @@
-/* PERSONALIZAÇÃO DO SITE DO ARTHUR
-   As alterações neste arquivo afetam somente sua página.
-   As fotos e os textos são trocados em arthur.html.
-   Para mudar uma cor, substitua seu código (por exemplo #60A5FA).
-   As variáveis abaixo indicam as cores da paleta azul elétrico. */
+
 :root {
-    /* ALTERAR: COR DO FUNDO PRINCIPAL. */
+
     --azul-noturno: #080F20;
-    /* ALTERAR: COR DE DESTAQUE: etiquetas, bordas e detalhes. */
+
     --azul: #60A5FA;
-    /* ALTERAR: COR DO FUNDO DOS CARDS EM DESTAQUE. */
+
     --azul-escuro: #1E3A5F;
-    /* ALTERAR: COR DO TEXTO PRINCIPAL. */
+
     --branco-azulado: #EFF6FF;
-    /* ALTERAR: COR DO TEXTO SECUNDÁRIO. */
+
     --cinza-azulado: #A6B8D2;
-    /* ALTERAR: COR DAS BORDAS. */
+
     --azul-borda: rgba(96, 165, 250, 0.18);
-    /* ALTERAR: COR DO FUNDO DOS CARDS. */
+
     --azul-card: #121E36;
-    /* ALTERAR: ALTURA DO CABEÇALHO (não é uma cor). */
+
     --altura-header: 72px;
-    /* ALTERAR: variações de azul usadas nas seções e nos gradientes. */
+
     --azul-profundo: #0B162B;
     --azul-marinho: #102440;
     --azul-cabecalho: rgba(8, 15, 32, 0.92);
@@ -58,14 +54,14 @@ header {
     gap: 24px;
     min-height: var(--altura-header);
     padding: 0 clamp(20px, 4vw, 64px);
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background-color: var(--azul-cabecalho);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--azul-borda);
 }
 
 .logo {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-weight: 700;
     font-size: 1.15rem;
@@ -101,22 +97,22 @@ nav a {
 }
 
 .s1 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background-color: var(--azul-noturno);
 }
 
 .s2 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background-color: var(--azul-profundo);
 }
 
 .s3 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background: linear-gradient(135deg, var(--azul-profundo), var(--azul-marinho));
 }
 
 .s5 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background-color: var(--azul-marinho);
 }
 
@@ -153,7 +149,7 @@ nav a {
 }
 
 .comeco-texto h1 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-size: clamp(2.6rem, 6vw, 4.5rem);
     line-height: 1;
@@ -178,7 +174,7 @@ nav a {
     margin-top: 20px;
     padding: 14px 32px;
     background-color: var(--azul);
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--azul-noturno);
     text-decoration: none;
     font-weight: 600;
@@ -194,15 +190,15 @@ nav a {
     width: 100%;
     max-width: 400px;
     max-height: 65vh;
-    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+
     aspect-ratio: 4 / 5;
-    /* ENQUADRAMENTO: cover preenche e recorta; contain mostra a foto inteira. */
+
     object-fit: cover;
     border-radius: 28px;
     border: 2px solid var(--azul);
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background-color: var(--azul-profundo);
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     box-shadow: 0 0 60px var(--azul-brilho);
 }
 
@@ -219,7 +215,7 @@ nav a {
 }
 
 .secao-titulo h2 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-size: clamp(1.4rem, 2.4vw, 1.9rem);
     line-height: 1.1;
@@ -245,7 +241,7 @@ nav a {
 }
 
 .card h3 {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-size: 1.15rem;
     margin-bottom: 12px;
@@ -284,7 +280,7 @@ nav a {
 }
 
 .frase {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-size: 1.4rem;
     font-style: italic;
@@ -348,7 +344,7 @@ footer {
 }
 
 .texto-destaque {
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     font-weight: 600;
@@ -365,7 +361,7 @@ footer {
 
 .quadrado {
     position: relative;
-    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 20px;
@@ -376,7 +372,7 @@ footer {
 .quadrado img {
     width: 100%;
     height: 100%;
-    /* ENQUADRAMENTO: cover preenche e recorta; contain mostra a foto inteira. */
+
     object-fit: cover;
     display: block;
 }
@@ -388,10 +384,10 @@ footer {
     bottom: 0;
     padding: 24px 12px 10px;
     text-align: center;
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     color: var(--branco-azulado);
     font-weight: 600;
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background: linear-gradient(transparent, var(--azul-cabecalho));
 }
 
@@ -426,7 +422,7 @@ footer {
 }
 
 .imagem-grande {
-    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+
     aspect-ratio: 4 / 5;
     max-height: 60vh;
     max-width: 400px;
@@ -435,9 +431,9 @@ footer {
     overflow: hidden;
     border-radius: 28px;
     border: 1px solid var(--azul-borda);
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background: linear-gradient(135deg, var(--azul-profundo), var(--azul-marinho));
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     box-shadow: 0 20px 60px var(--azul-sombra);
 }
 
@@ -445,7 +441,7 @@ footer {
 .foto img {
     width: 100%;
     height: 100%;
-    /* ENQUADRAMENTO: cover preenche e recorta; contain mostra a foto inteira. */
+
     object-fit: cover;
     display: block;
 }
@@ -467,12 +463,12 @@ footer {
 }
 
 .foto {
-    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+
     aspect-ratio: 16 / 10;
     overflow: hidden;
     border-radius: 20px;
     border: 1px solid var(--azul-borda);
-    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+
     background: linear-gradient(135deg, var(--azul-profundo), var(--azul-marinho));
 }
 
@@ -500,7 +496,7 @@ footer {
     }
 
     .imagem-grande {
-        /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+
         aspect-ratio: 4 / 3;
     }
 }
