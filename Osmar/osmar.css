@@ -1,16 +1,14 @@
-/* ===== Cores: substitua os textos entre colchetes pelas cores desejadas ===== */
 :root {
-    --preto: [cor de fundo principal];
-    --vermelho: [cor principal de destaque];
-    --vermelho-escuro: [cor escura de destaque];
-    --cinza: [cor principal dos textos];
-    --cinza-suave: [cor dos textos secundários];
-    --borda: [cor das bordas];
-    --card: [cor de fundo dos cards];
+    --preto: #000000;
+    --vermelho: #e10600;
+    --vermelho-escuro: #7a0300;
+    --cinza: #CFCFCF;
+    --cinza-suave: #8f8f8f;
+    --borda: rgba(255, 255, 255, 0.08);
+    --card: rgba(255, 255, 255, 0.04);
     --altura-header: 72px;
 }
 
-/* ===== Base ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +29,6 @@ body {
     line-height: 1.7;
 }
 
-/* ===== Cabeçalho ===== */
 header {
     position: sticky;
     top: 0;
@@ -70,7 +67,6 @@ nav a {
     border-radius: 999px;
 }
 
-/* ===== Seções ===== */
 .conteudo {
     width: 100%;
     max-width: 1500px;
@@ -99,7 +95,6 @@ nav a {
     background-color: #232323;
 }
 
-/* ===== Início ===== */
 .comeco {
     min-height: calc(100vh - var(--altura-header));
     display: flex;
@@ -180,7 +175,6 @@ nav a {
     box-shadow: 0 0 60px rgba(225, 6, 0, 0.25);
 }
 
-/* ===== Layout das seções ===== */
 .secao-grid {
     display: grid;
     grid-template-columns: 1fr 2.2fr;
@@ -204,7 +198,6 @@ nav a {
     color: var(--cinza-suave);
 }
 
-/* ===== Cards ===== */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -263,7 +256,6 @@ nav a {
     font-style: italic;
 }
 
-/* ===== Rodapé ===== */
 footer {
     padding: 32px 20px;
     text-align: center;
@@ -273,7 +265,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ===== Tablet e celular ===== */
 @media (max-width: 900px) {
     .comeco-grid,
     .secao-grid {
@@ -316,7 +307,6 @@ footer {
     }
 }
 
-/* ===== Pessoas importantes ===== */
 .pessoas-conteudo {
     display: flex;
     flex-direction: column;
@@ -385,7 +375,6 @@ footer {
     }
 }
 
-/* ===== Imagens grandes nas seções ===== */
 .secao-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -442,7 +431,6 @@ footer {
     background: linear-gradient(135deg, #1a1a1a, #2b0504);
 }
 
-/* ===== Pessoas ===== */
 .secao-pessoas .secao-titulo {
     position: static;
     margin-bottom: 30px;
@@ -485,155 +473,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-:root {
-    --preto: #090711;
-    --vermelho: #a78bfa;
-    --vermelho-escuro: #4c1d95;
-    --cinza: #eef1f5;
-    --cinza-suave: #a8b0bc;
-    --borda: rgb(196 181 253 / 12%);
-    --card: rgb(196 181 253 / 5%);
-    --altura-header: 78px;
-    color-scheme: dark;
-}
-
-html { scroll-behavior: smooth; }
-body {
-    margin: 0;
-    color: #e8ecf2;
-    background:
-        radial-gradient(ellipse at 15% 5%, rgb(124 58 237 / 18%), transparent 32rem),
-        radial-gradient(ellipse at 90% 30%, rgb(76 29 149 / 24%), transparent 36rem),
-        #080b10;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    line-height: 1.7;
-}
-::selection { color: white; background: #6d28d9; }
-a { color: #c4b5fd; }
-a:focus-visible { outline: 3px solid #c4b5fd; outline-offset: 4px; border-radius: 4px; }
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    color: #fff;
-    background: rgb(12 9 20 / 90%);
-    border-bottom: 1px solid rgb(196 181 253 / 12%);
-    backdrop-filter: blur(18px);
-}
-.header-inner {
-    width: min(1180px, calc(100% - 48px));
-    min-height: 78px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px;
-}
-.brand { color: #fff; font-weight: 800; font-size: 1.02rem; letter-spacing: .02em; text-decoration: none; }
-.brand::before { content: ""; display: inline-block; width: 9px; height: 9px; margin: 0 10px 1px 0; border-radius: 50%; background: var(--vermelho); box-shadow: 0 0 18px rgb(167 139 250 / 75%); }
-nav ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; margin: 0; padding: 0; list-style: none; }
-nav a { display: block; padding: 8px 11px; border-radius: 999px; color: #c0c7d1; font-size: .88rem; text-decoration: none; transition: color .2s ease, background .2s ease; }
-nav a:hover, nav a:focus-visible { color: #fff; background: rgb(255 255 255 / 8%); text-decoration: none; }
-
-.page-content { width: min(1120px, calc(100% - 48px)); margin: 44px auto 88px; }
-.intro-card, .section-card {
-    scroll-margin-top: 108px;
-    margin: 0 0 28px;
-    border: 1px solid rgb(196 181 253 / 12%);
-    border-radius: 26px;
-    background: linear-gradient(145deg, rgb(30 24 43 / 96%), rgb(15 12 23 / 98%));
-    box-shadow: 0 24px 70px rgb(0 0 0 / 28%);
-}
-.intro-card {
-    min-height: 420px;
-    padding: clamp(28px, 6vw, 68px);
-    display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(220px, .7fr);
-    align-items: center;
-    gap: clamp(30px, 6vw, 82px);
-    overflow: hidden;
-    background:
-        radial-gradient(circle at 85% 30%, rgb(124 58 237 / 26%), transparent 28rem),
-        linear-gradient(135deg, #20192d, #100d18 70%);
-}
-.intro-copy { min-width: 0; }
-.eyebrow { display: inline-block; margin-bottom: 14px; color: #c4b5fd; font-size: .75rem; font-weight: 800; letter-spacing: .2em; }
-.intro-copy h1 { max-width: 12ch; margin: 0; color: #fff; font-size: clamp(2.7rem, 6.8vw, 5.6rem); font-weight: 850; letter-spacing: -.065em; line-height: .99; }
-.hero-lead { margin: 24px 0 30px; color: #c2c9d3; font-size: clamp(1.05rem, 2vw, 1.3rem); }
-.intro-card > img { width: 100%; max-width: 330px; aspect-ratio: 4 / 5; justify-self: center; object-fit: cover; border: 1px solid rgb(255 255 255 / 20%); border-radius: 24px; box-shadow: 0 22px 60px rgb(0 0 0 / 38%), 0 0 0 8px rgb(255 255 255 / 3%); }
-.quick-facts { display: flex; flex-wrap: wrap; gap: 10px; }
-.quick-facts p { min-width: 132px; margin: 0; padding: 11px 15px; border: 1px solid rgb(255 255 255 / 9%); border-radius: 14px; background: rgb(255 255 255 / 4%); }
-.quick-facts strong, .quick-facts span { display: block; }
-.quick-facts strong { color: #939eac; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
-.quick-facts span { color: #f1f3f6; font-size: .9rem; font-weight: 650; }
-
-.section-card { padding: clamp(25px, 5vw, 52px); }
-.section-card > h2 { display: flex; align-items: center; gap: 14px; margin: 0 0 25px; color: #fff; font-size: clamp(1.75rem, 4vw, 2.45rem); letter-spacing: -.04em; line-height: 1.15; }
-.section-card > h2::before { content: ""; width: 5px; height: 1.2em; flex: 0 0 5px; border-radius: 5px; background: var(--vermelho); box-shadow: 0 0 20px rgb(255 59 48 / 40%); }
-.section-card h3 { margin-top: 0; color: #fff; letter-spacing: -.015em; }
-.section-card p { color: #c0c7d1; }
-.section-card hr { border: 0; border-top: 1px solid var(--borda); margin: 28px 0; }
-.section-card ol { padding-left: 1.35rem; }
-.section-card li { padding: 3px 0; color: #d4d9e0; }
-.section-card li::marker { color: var(--vermelho); font-weight: 800; }
-.section-card > img { display: block; width: min(100%, 760px); max-height: 430px; margin: 26px auto 8px; border: 1px solid var(--borda); border-radius: 20px; object-fit: cover; }
-
-.interest-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; align-items: start; }
-.interest-card { grid-column: span 2; min-width: 0; padding: 20px; border: 1px solid rgb(255 255 255 / 8%); border-radius: 18px; background: linear-gradient(145deg, rgb(255 255 255 / 5%), rgb(255 255 255 / 2%)); }
-.interest-card:nth-child(-n+2) { grid-column: span 3; }
-.interest-card:nth-child(n+3) { display: flex; min-height: 108px; align-items: center; }
-.interest-title { display: flex; align-items: center; gap: 13px; min-height: 54px; }
-.interest-title > img { width: 42px; height: 42px; flex: 0 0 42px; object-fit: contain; }
-.interest-title h3 { margin: 0; font-size: 1rem; line-height: 1.35; }
-.interest-card .interest-photo { width: 100%; height: 150px; margin: 18px 0 0; border-radius: 12px; object-fit: cover; }
-.artists-block { margin-top: 50px; padding-top: 34px; border-top: 1px solid var(--borda); scroll-margin-top: 108px; }
-.artists-block > h3 { margin-bottom: 8px; font-size: 1.5rem; }
-.artists-block > p { max-width: 70ch; margin: 0 0 22px; }
-.artist-gallery { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
-.artist-gallery > a { color: #fff; text-decoration: none; }
-.artist-gallery figure { position: relative; aspect-ratio: 1; overflow: hidden; margin: 0; border: 1px solid var(--borda); border-radius: 16px; background: #111720; }
-.artist-gallery img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
-.artist-gallery a:hover img { transform: scale(1.06); }
-.artist-gallery figcaption { position: absolute; inset: auto 0 0; padding: 26px 10px 10px; color: #fff; font-size: .86rem; font-weight: 750; background: linear-gradient(transparent, rgb(0 0 0 / 88%)); }
-
-.travel-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 30px; }
-.travel-photo { min-width: 0; overflow: hidden; margin: 0; border: 1px solid var(--borda); border-radius: 16px; background: #111720; }
-.travel-photo img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .35s ease; }
-.travel-photo:hover img { transform: scale(1.035); }
-.travel-photo cite { display: block; padding: 11px 13px 13px; color: #aeb7c3; font-size: .82rem; font-style: normal; }
-#lugares-que-j-visitei ol, #lugares-que-sonho-em-conhecer ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 26px; }
-#lugares-que-j-visitei > a { display: inline-block; margin-top: 26px; padding: 10px 15px; border: 1px solid var(--borda); border-radius: 999px; text-decoration: none; }
-.section-card br { display: none; }
-
-.site-footer { padding: 28px 20px; color: #919ba8; background: #07090d; border-top: 1px solid var(--borda); text-align: center; font-size: .88rem; }
-.site-footer p { margin: 0; }
-
-@media (max-width: 900px) {
-    .intro-card { grid-template-columns: minmax(0, 1fr) 250px; gap: 28px; }
-    .interest-card { grid-column: span 2; }
-    .artist-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .travel-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 680px) {
-    .header-inner { width: calc(100% - 32px); min-height: unset; padding: 15px 0 12px; align-items: flex-start; flex-direction: column; gap: 8px; }
-    nav ul { justify-content: flex-start; gap: 2px; }
-    nav a { padding: 7px 9px; font-size: .8rem; }
-    .page-content { width: calc(100% - 28px); margin: 20px auto 48px; }
-    .intro-card { min-height: 0; grid-template-columns: 1fr; padding: 25px; }
-    .intro-card > img { grid-row: 1; width: min(72%, 255px); }
-    .intro-copy h1 { max-width: 11ch; font-size: clamp(2.7rem, 13vw, 4rem); }
-    .quick-facts { display: grid; grid-template-columns: 1fr 1fr; }
-    .quick-facts p:last-child { grid-column: 1 / -1; }
-    .section-card { padding: 24px 20px; border-radius: 20px; }
-    .interest-card:nth-child(n) { grid-column: 1 / -1; }
-    .interest-card .interest-photo { height: 190px; }
-    .artist-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .travel-gallery { grid-template-columns: 1fr; }
-    #lugares-que-j-visitei ol, #lugares-que-sonho-em-conhecer ol { grid-template-columns: 1fr; }
-}
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
-}
-
