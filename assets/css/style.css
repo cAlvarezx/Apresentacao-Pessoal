@@ -69,7 +69,6 @@ h2 { margin-top: 10px; font-size: clamp(1.7rem, 2.7vw, 2.25rem); line-height: 1.
 .retrato-placeholder > span { margin-top: -4px; font-size: .65rem; font-weight: 400; letter-spacing: .05em; opacity: .7; }
 .tom-lilas { background: radial-gradient(ellipse at 70% 10%, #514263, #292333); }
 .tom-azul { background: radial-gradient(ellipse at 70% 10%, #344b64, #202734); }
-.tom-rosa { background: radial-gradient(ellipse at 70% 10%, #624453, #33242d); }
 .tom-verde { background: radial-gradient(ellipse at 70% 10%, #40564c, #212e2b); }
 .integrante-info { padding: 20px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 h3 { font-size: 1.1rem; }
