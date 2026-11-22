@@ -1,0 +1,521 @@
+/* PERSONALIZAÇÃO DO SITE DO ARTHUR
+   As alterações neste arquivo afetam somente sua página.
+   As fotos e os textos são trocados em arthur.html.
+   Para mudar uma cor, substitua seu código (por exemplo #60A5FA).
+   As variáveis abaixo indicam as cores da paleta azul elétrico. */
+:root {
+    /* ALTERAR: COR DO FUNDO PRINCIPAL. */
+    --azul-noturno: #080F20;
+    /* ALTERAR: COR DE DESTAQUE: etiquetas, bordas e detalhes. */
+    --azul: #60A5FA;
+    /* ALTERAR: COR DO FUNDO DOS CARDS EM DESTAQUE. */
+    --azul-escuro: #1E3A5F;
+    /* ALTERAR: COR DO TEXTO PRINCIPAL. */
+    --branco-azulado: #EFF6FF;
+    /* ALTERAR: COR DO TEXTO SECUNDÁRIO. */
+    --cinza-azulado: #A6B8D2;
+    /* ALTERAR: COR DAS BORDAS. */
+    --azul-borda: rgba(96, 165, 250, 0.18);
+    /* ALTERAR: COR DO FUNDO DOS CARDS. */
+    --azul-card: #121E36;
+    /* ALTERAR: ALTURA DO CABEÇALHO (não é uma cor). */
+    --altura-header: 72px;
+    /* ALTERAR: variações de azul usadas nas seções e nos gradientes. */
+    --azul-profundo: #0B162B;
+    --azul-marinho: #102440;
+    --azul-cabecalho: rgba(8, 15, 32, 0.92);
+    --azul-brilho: rgba(96, 165, 250, 0.25);
+    --azul-sombra: rgba(3, 9, 22, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--azul-noturno);
+    color: var(--branco-azulado);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: var(--altura-header);
+    padding: 0 clamp(20px, 4vw, 64px);
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background-color: var(--azul-cabecalho);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--azul-borda);
+}
+
+.logo {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+nav a {
+    color: var(--branco-azulado);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    border-radius: 999px;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 80px);
+}
+
+.secao {
+    padding: clamp(60px, 9vw, 120px) 0;
+    scroll-margin-top: var(--altura-header);
+}
+
+.s1 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background-color: var(--azul-noturno);
+}
+
+.s2 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background-color: var(--azul-profundo);
+}
+
+.s3 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background: linear-gradient(135deg, var(--azul-profundo), var(--azul-marinho));
+}
+
+.s5 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background-color: var(--azul-marinho);
+}
+
+.comeco {
+    min-height: calc(100vh - var(--altura-header));
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            var(--azul-brilho),
+            transparent 55%
+        ),
+        var(--azul-noturno);
+    scroll-margin-top: var(--altura-header);
+}
+
+.comeco-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(30px, 6vw, 100px);
+}
+
+.etiqueta {
+    display: inline-block;
+    color: var(--azul);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.comeco-texto h1 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-size: clamp(2.6rem, 6vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.comeco-texto h2 {
+    color: var(--cinza-azulado);
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.comeco-texto p {
+    max-width: 55ch;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 32px;
+    background-color: var(--azul);
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--azul-noturno);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+.comeco-img {
+    display: flex;
+    justify-content: center;
+}
+
+.comeco-img img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 65vh;
+    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+    aspect-ratio: 4 / 5;
+    /* ENQUADRAMENTO: cover preenche e recorta; contain mostra a foto inteira. */
+    object-fit: cover;
+    border-radius: 28px;
+    border: 2px solid var(--azul);
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background-color: var(--azul-profundo);
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    box-shadow: 0 0 60px var(--azul-brilho);
+}
+
+.secao-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: clamp(30px, 5vw, 80px);
+    align-items: start;
+}
+
+.secao-titulo {
+    position: sticky;
+    top: calc(var(--altura-header) + 30px);
+}
+
+.secao-titulo h2 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.secao-titulo p {
+    color: var(--cinza-azulado);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--azul-card);
+    border: 1px solid var(--azul-borda);
+    border-radius: 20px;
+    padding: 28px;
+    backdrop-filter: blur(6px);
+}
+
+.card h3 {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.card h3::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 3px;
+    margin-bottom: 14px;
+    border-radius: 2px;
+    background-color: var(--azul);
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+.card li::marker {
+    color: var(--azul);
+}
+
+.card.destaque {
+    background-color: var(--azul-escuro);
+    border-color: var(--azul);
+}
+
+.card-largo {
+    grid-column: 1 / -1;
+}
+
+.frase {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+footer {
+    padding: 32px 20px;
+    text-align: center;
+    background-color: var(--azul-noturno);
+    border-top: 1px solid var(--azul-borda);
+    color: var(--cinza-azulado);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .comeco-grid,
+    .secao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comeco-img {
+        order: -1;
+    }
+
+    .comeco-img img {
+        max-width: 260px;
+    }
+
+    .secao-titulo {
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 20px;
+        gap: 6px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    .secao,
+    .comeco {
+        scroll-margin-top: 110px;
+    }
+}
+
+.pessoas-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texto-destaque {
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.4;
+    padding-left: 20px;
+    border-left: 4px solid var(--azul);
+}
+
+.amigos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.quadrado {
+    position: relative;
+    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--azul-card);
+    border: 1px solid var(--azul-borda);
+}
+
+.quadrado img {
+    width: 100%;
+    height: 100%;
+    /* ENQUADRAMENTO: cover preenche e recorta; contain mostra a foto inteira. */
+    object-fit: cover;
+    display: block;
+}
+
+.quadrado figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 24px 12px 10px;
+    text-align: center;
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    color: var(--branco-azulado);
+    font-weight: 600;
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background: linear-gradient(transparent, var(--azul-cabecalho));
+}
+
+.familia {
+    display: grid;
+    grid-template-columns: minmax(200px, 320px) 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 900px) {
+    .amigos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .familia {
+        grid-template-columns: 1fr;
+    }
+}
+
+.secao-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(30px, 5vw, 80px);
+    align-items: center;
+}
+
+.secao-img.invertido .imagem-grande {
+    order: 2;
+}
+
+.imagem-grande {
+    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+    aspect-ratio: 4 / 5;
+    max-height: 60vh;
+    max-width: 400px;
+    width: 100%;
+    justify-self: center;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid var(--azul-borda);
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background: linear-gradient(135deg, var(--azul-profundo), var(--azul-marinho));
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    box-shadow: 0 20px 60px var(--azul-sombra);
+}
+
+.imagem-grande img,
+.foto img {
+    width: 100%;
+    height: 100%;
+    /* ENQUADRAMENTO: cover preenche e recorta; contain mostra a foto inteira. */
+    object-fit: cover;
+    display: block;
+}
+
+.secao-corpo .secao-titulo {
+    position: static;
+    margin-bottom: 24px;
+}
+
+.secao-corpo .cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: clamp(30px, 5vw, 60px);
+}
+
+.foto {
+    /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--azul-borda);
+    /* COR: troque a variável abaixo ou edite sua definição no :root. */
+    background: linear-gradient(135deg, var(--azul-profundo), var(--azul-marinho));
+}
+
+.secao-pessoas .secao-titulo {
+    position: static;
+    margin-bottom: 30px;
+}
+
+.secao-pessoas .quadrado {
+    border-radius: 24px;
+}
+
+.secao-pessoas .familia {
+    grid-template-columns: minmax(200px, 320px) 1fr;
+    gap: clamp(24px, 5vw, 60px);
+}
+
+@media (max-width: 900px) {
+    .secao-img {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-img.invertido .imagem-grande {
+        order: 0;
+    }
+
+    .imagem-grande {
+        /* FORMATO DA FOTO: 1 / 1 é quadrado; 4 / 5 é retrato. */
+        aspect-ratio: 4 / 3;
+    }
+}
+
+@media (max-width: 700px) {
+    .secao-pessoas .familia {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-pessoas .familia .quadrado {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
