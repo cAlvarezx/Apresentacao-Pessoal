@@ -17,3 +17,5 @@ Arquivos principais: index.html e style.css. Cada apresentação existente mant�
 Branch solicitada: feat/inicio.
 
 - A página do Arthur usa a paleta azul elétrico: fundo #080F20, destaque #60A5FA e cards #121E36. As variáveis em arthur/arthur.css têm nomes das cores, como --azul e --azul-noturno; as cores das seções também estão centralizadas no :root.
+
+- A organização voltou às pastas individuais na raiz: arthur/arthur.html, caue/caue.html, joao/joao.html, Osmar/osmar.html e raphael/raphael.html. Cada integrante tem suas imagens em assets e seu CSS com o próprio nome; o index principal usa style.css na raiz.

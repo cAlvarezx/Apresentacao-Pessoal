@@ -506,9 +506,9 @@ img { max-width: 100%; }
     object-fit: cover;
 }
 /* Um pouco mais de altura nos hobbies reduz o corte das fotos verticais. */
-#hobbies img[src="assets/img/meu-pc.jpg"] { object-position: center 45%; }
-#hobbies img[src="assets/img/violao.jpg"] { object-position: center 52%; }
-#hobbies img[src="assets/img/isa.jpeg"] { object-position: center 28%; }
+#hobbies img[src="assets/meu-pc.jpg"] { object-position: center 45%; }
+#hobbies img[src="assets/violao.jpg"] { object-position: center 52%; }
+#hobbies img[src="assets/isa.jpeg"] { object-position: center 28%; }
 /* Capas em quadros mais baixos, com um recorte moderado. */
 #gostos .galeria .foto {
     aspect-ratio: 4 / 3;
@@ -527,10 +527,10 @@ img { max-width: 100%; }
     height: 100%;
     object-fit: cover;
 }
-#pessoas img[src="assets/img/acta.jpg"] { object-position: 55% center; }
-#pessoas img[src="assets/img/splendido.jpg"] { object-position: center 35%; }
-#pessoas img[src="assets/img/resenha.jpg"] { object-position: center 60%; }
-#pessoas img[src="assets/img/familia.jpg"] { object-position: right center; }
+#pessoas img[src="assets/acta.jpg"] { object-position: 55% center; }
+#pessoas img[src="assets/splendido.jpg"] { object-position: center 35%; }
+#pessoas img[src="assets/resenha.jpg"] { object-position: center 60%; }
+#pessoas img[src="assets/familia.jpg"] { object-position: right center; }
 /* O retrato final continua inteiro, como solicitado. */
 #pessoas .familia .quadrado { aspect-ratio: 546 / 970; max-width: 280px; }
 #pessoas .familia .quadrado img { object-position: center; }
